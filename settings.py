@@ -130,7 +130,7 @@ NEVERCACHE_KEY = "9213de59-7051-41ee-b9ab-11f2c399aca404bd4f74-d123-4864-9d28-9b
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
 #   * Receive x-headers
-INTERNAL_IPS = ("127.0.0.1",)
+INTERNAL_IPS = ("127.0.0.1","10.179.43.187","54.227.129.183")
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
