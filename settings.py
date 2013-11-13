@@ -312,23 +312,23 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 # These settings are used by the default fabfile.py provided.
 # Check fabfile.py for defaults.
 
-# FABRIC = {
-#     "SSH_USER": "", # SSH username
-#     "SSH_PASS":  "", # SSH password (consider key-based authentication)
-#     "SSH_KEY_PATH":  "", # Local path to SSH key file, for key-based auth
-#     "HOSTS": [], # List of hosts to deploy to
-#     "VIRTUALENV_HOME":  "", # Absolute remote path for virtualenvs
-#     "PROJECT_NAME": "", # Unique identifier for project
-#     "REQUIREMENTS_PATH": "", # Path to pip requirements, relative to project
-#     "GUNICORN_PORT": 8000, # Port gunicorn will listen on
-#     "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
-#     "LIVE_HOSTNAME": "www.example.com", # Host for public site.
-#     "REPO_URL": "", # Git or Mercurial remote repo URL for the project
-#     "DB_PASS": "", # Live database password
-#     "ADMIN_PASS": "", # Live admin user password
-#     "SECRET_KEY": SECRET_KEY,
-#     "NEVERCACHE_KEY": NEVERCACHE_KEY,
-# }
+FABRIC = {
+    "SSH_USER": "ubuntu", # SSH username
+    "SSH_PASS":  "", # SSH password (consider key-based authentication)
+    "SSH_KEY_PATH":  "/home/tomcat/mythicalio.pem", # Local path to SSH key file, for key-based auth
+    "HOSTS": ["ec2-54-227-129-183.compute-1.amazonaws.com"], # List of hosts to deploy to
+    "VIRTUALENV_HOME":  "/home/ubuntu", # Absolute remote path for virtualenvs
+    "PROJECT_NAME": "mythical", # Unique identifier for project
+    "REQUIREMENTS_PATH": "requirements/project.txt", # Path to pip requirements, relative to project
+    "GUNICORN_PORT": 8000, # Port gunicorn will listen on
+    "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
+    "LIVE_HOSTNAME": "ec2-54-227-129-183.compute-1.amazonaws.com", # Host for public site.
+    "REPO_URL": "https://github.com/chriscabral/mythical-site.git", # Git or Mercurial remote repo URL for the project
+    "DB_PASS": "password", # Live database password
+    "ADMIN_PASS": "password", # Live admin user password
+    "SECRET_KEY": SECRET_KEY,
+    "NEVERCACHE_KEY": NEVERCACHE_KEY,
+}
 
 
 ##################
