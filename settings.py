@@ -76,7 +76,7 @@
 
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
-USE_SOUTH = False
+USE_SOUTH = True
 
 ########################
 # MAIN DJANGO SETTINGS #
@@ -225,8 +225,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
-    "mezzanine_default",
-    "mythial_pm",
+    "project_manager",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -244,7 +243,7 @@ INSTALLED_APPS = (
     "mezzanine.pages",
     "mezzanine.galleries",
     "mezzanine.twitter",
-    #"mezzanine.accounts",
+    "mezzanine.accounts",
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -305,7 +304,9 @@ OPTIONAL_APPS = (
 )
 
 
-PROJECT_APPS = OPTIONAL_APPS
+PROJECT_APPS = (
+    "project_manager",
+)
 
 DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 

@@ -1,5 +1,4 @@
 Django==1.5.5
-Mezzanine==1.4.16
 Pillow==2.2.1
 South==0.8.3
 astroid==1.0.1
