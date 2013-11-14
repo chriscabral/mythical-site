@@ -6,7 +6,7 @@ from mezzanine.core.views import direct_to_template
 from registration_helper import autoregister 
 
 
-autoregister("mythial_pm")
+autoregister("project_manager")
 admin.autodiscover()
 
 # Add the urlpatterns for any custom Django applications here.
