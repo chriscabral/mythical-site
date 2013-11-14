@@ -76,9 +76,7 @@
 
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
-USE_SOUTH = True
-
-# AUTH_USER_MODEL = "mythial_pm.MyProfile"
+USE_SOUTH = False
 
 ########################
 # MAIN DJANGO SETTINGS #
@@ -246,7 +244,7 @@ INSTALLED_APPS = (
     "mezzanine.pages",
     "mezzanine.galleries",
     "mezzanine.twitter",
-    "mezzanine.accounts",
+    #"mezzanine.accounts",
 )
 
 # List of processors used by RequestContext to populate the context.

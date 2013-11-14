@@ -1,3 +1,3 @@
-from django.db import models
-from django.contrib.auth.models import User
-from mezzanine.pages.models import Page
+# from django.db import models
+# from mezzanine.pages.models import Page
+
