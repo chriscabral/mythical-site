@@ -11,11 +11,10 @@ Database migrations
     $ git push origin master
 
 
-This process does not work. todo look for a better solution like django-smuggler
 Editing the pages on the screen
 -If pages have been added and you would like those pages to go to production then:
-    $ python manage.py dumpdata --natural --exclude contenttypes --exclude auth --exclude sessions --exclude sites --exclude pages --exclude twitter --exclude south > initial_data.json
-    $ git add initial_data.json
+    $ python manage.py dumpdata pages --indent 4 > mezzanine/pages/fixtures/initial_data.json 
+    $ git add mezzanine/pages/fixtures/initial_data.json
     $ git commit -m "some relavent commit message"
     $ git push origin master
 
