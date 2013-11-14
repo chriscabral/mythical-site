@@ -90,7 +90,7 @@ ADMINS = (
 )
 MANAGERS = ADMINS
 
-ALLOWED_HOSTS = ["ec2-54-227-129-183.compute-1.amazonaws.com"]
+ALLOWED_HOSTS = ["ec2-23-20-195-217.compute-1.amazonaws.com"]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -322,13 +322,13 @@ FABRIC = {
     "SSH_USER": "ubuntu", # SSH username
     "SSH_PASS":  "", # SSH password (consider key-based authentication)
     "SSH_KEY_PATH":  "/home/tomcat/mythicalio.pem", # Local path to SSH key file, for key-based auth
-    "HOSTS": ["ec2-54-227-129-183.compute-1.amazonaws.com"], # List of hosts to deploy to
+    "HOSTS": ["ec2-23-20-195-217.compute-1.amazonaws.com"], # List of hosts to deploy to
     "VIRTUALENV_HOME":  "/home/ubuntu", # Absolute remote path for virtualenvs
     "PROJECT_NAME": "mythical", # Unique identifier for project
     "REQUIREMENTS_PATH": "requirements/project.txt", # Path to pip requirements, relative to project
     "GUNICORN_PORT": 8000, # Port gunicorn will listen on
     "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
-    "LIVE_HOSTNAME": "ec2-54-227-129-183.compute-1.amazonaws.com", # Host for public site.
+    "LIVE_HOSTNAME": "ec2-23-20-195-217.compute-1.amazonaws.com", # Host for public site.
     "REPO_URL": "https://github.com/chriscabral/mythical-site.git", # Git or Mercurial remote repo URL for the project
     "DB_PASS": "password", # Live database password
     "ADMIN_PASS": "password", # Live admin user password
