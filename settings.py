@@ -306,6 +306,7 @@ OPTIONAL_APPS = (
 
 PROJECT_APPS = (
     "project_manager",
+    "mezzanine",
 )
 
 DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
