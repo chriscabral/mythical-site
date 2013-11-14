@@ -76,7 +76,7 @@
 
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
-USE_SOUTH = False
+USE_SOUTH = True
 
 # AUTH_USER_MODEL = "mythial_pm.MyProfile"
 
