@@ -1,0 +1,68 @@
+[
+{
+    "pk": 1, 
+    "model": "pages.page", 
+    "fields": {
+        "status": 2, 
+        "login_required": false, 
+        "updated": null, 
+        "_order": 1, 
+        "titles": "Blog", 
+        "description": "Blog", 
+        "parent": null, 
+        "title": "Blog", 
+        "short_url": null, 
+        "created": null, 
+        "site": 1, 
+        "in_sitemap": true, 
+        "keywords_string": "", 
+        "_meta_title": null, 
+        "expiry_date": null, 
+        "publish_date": null, 
+        "content_model": "richtextpage", 
+        "in_menus": "1,2,3", 
+        "slug": "blog", 
+        "gen_description": true
+    }
+},
+{
+    "pk": 2, 
+    "model": "pages.page", 
+    "fields": {
+        "status": 2, 
+        "login_required": false, 
+        "updated": "2013-11-14T06:05:52.059Z", 
+        "_order": 1, 
+        "titles": "Second Page", 
+        "description": "fasdfa", 
+        "parent": null, 
+        "title": "Second Page", 
+        "short_url": null, 
+        "created": "2013-11-14T06:05:52.059Z", 
+        "site": 1, 
+        "in_sitemap": true, 
+        "keywords_string": "", 
+        "_meta_title": "", 
+        "expiry_date": null, 
+        "publish_date": "2013-11-14T06:05:52.038Z", 
+        "content_model": "richtextpage", 
+        "in_menus": "1,2,3", 
+        "slug": "second-page", 
+        "gen_description": true
+    }
+},
+{
+    "pk": 1, 
+    "model": "pages.richtextpage", 
+    "fields": {
+        "content": "<p>Blog</p>"
+    }
+},
+{
+    "pk": 2, 
+    "model": "pages.richtextpage", 
+    "fields": {
+        "content": "<p>fasdfa</p>"
+    }
+}
+]
